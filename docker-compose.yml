@@ -2,14 +2,14 @@ version: "3"
 
 services:
   backend:
-    image: "mmisiewicz/facebook-video-classifier-backend:0.1.1"
+    image: "mmisiewicz/facebook-video-classifier-backend:latest"
     ports:
       - "5000:5000"
     depends_on:
       - redis
 
   frontend:
-    image: "mmisiewicz/facebook-video-classifier-frontend:0.1.1"
+    image: "mmisiewicz/facebook-video-classifier-frontend:latest"
     ports:
       - "8080:8080"
     depends_on:
